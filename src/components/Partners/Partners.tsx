@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 const partners = [
-  { logo: "public/p1.jpg" },
-  { logo: "public/p2.jpg" },
-  { logo: "public/p3.jpg" },
+  { logo: "/p1.jpg" },
+  { logo: "/p2.jpg" },
+  { logo: "/p3.jpg" },
 ];
 
 const Partners = () => {
