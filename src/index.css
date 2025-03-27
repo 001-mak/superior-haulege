@@ -1,4 +1,9 @@
 @import "tailwindcss";
+@font-face {
+  font-family: 'font-extended';
+  src: url("./assets/fonts/extended.ttf") format('truetype');
+}
+
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

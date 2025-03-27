@@ -18,23 +18,21 @@ const Navbar = () => {
     <>
       <div className="flex justify-center">
         <nav
-        //   className={`fixed w-[80%] mt-4 rounded-[15px] z-50 transition-all duration-300 bg-violet-200 bg-opacity-10
-        //   }`}
-        className={`fixed w-[80%] mt-4 rounded-[15px] z-50 transition-all duration-300 ${
+        className={`fixed w-[100%] h-[85px] pt-2 z-50 transition-all duration-300 ${
             isScrolled
-              ? "bg-white/30 backdrop-filter backdrop-blur-md  drop-shadow-xl"
-              : "bg-white/90 shadow-md"
+              ? "bg-blue-900/90 backdrop-filter backdrop-blur-md  drop-shadow-xl"
+              : "bg-blue-950/90 shadow-md"
           }`}
         >
           <div className="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
             {/* Logo */}
-            <img src="/logo.png" alt="Logo" className="h-15" />
+            <img src="/logo.png" alt="Logo" className="h-20 pt-2" />
 
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-6">
               {[
                 { name: "Home", to: "home" },
-                { name: "About Us", to: "about" },
+                // { name: "About Us", to: "about" },
                 { name: "Services", to: "services" },
                 { name: "Contact", to: "contact" },
               ].map((link) => (
@@ -43,7 +41,7 @@ const Navbar = () => {
                   to={link.to}
                   smooth={true}
                   duration={500}
-                  className="text-dark font-semibold cursor-pointer transition-opacity hover:opacity-75"
+                  className="text-white text-lg font-semibold cursor-pointer transition-opacity hover:opacity-75"
                 >
                   {link.name}
                 </Link>
@@ -51,14 +49,17 @@ const Navbar = () => {
             </div>
 
             {/* CTA Button */}
-            <Link
+            <div className="px-15">
+
+            </div>
+            {/* <Link
               to="quote"
               smooth={true}
               duration={500}
-              className="hidden text-white md:inline-block px-5 py-2 bg-blue-400 font-semibold rounded-lg transition transform hover:scale-105 hover:bg-blue-500 cursor-pointer"
+              className="hidden text-blue-500 md:inline-block px-5 py-2 bg-white font-semibold rounded-lg transition transform hover:scale-105 hover:bg-blue-500 cursor-pointer"
             >
               Get a Quote
-            </Link>
+            </Link> */}
 
             {/* Mobile Menu Button */}
             <button
@@ -71,7 +72,7 @@ const Navbar = () => {
 
           {/* Mobile Menu */}
           <div
-            className={`absolute top-16 left-0 w-full bg-blue-700 transition-transform duration-300 md:hidden ${
+            className={`absolute top-21 left-0 w-full bg-blue-900 transition-transform duration-300 md:hidden ${
               isOpen ? "translate-x-0" : "-translate-x-full"
             }`}
           >
@@ -81,7 +82,7 @@ const Navbar = () => {
                   {[
                     { name: "Home", to: "home" },
                     { name: "Services", to: "services" },
-                    { name: "About Us", to: "about" },
+                    // { name: "About Us", to: "about" },
                     { name: "Contact", to: "contact" },
                   ].map((link) => (
                     <Link
@@ -95,15 +96,15 @@ const Navbar = () => {
                       {link.name}
                     </Link>
                   ))}
-                  <Link
+                  {/* <Link
                     to="quote"
                     smooth={true}
                     duration={500}
-                    className="px-5 py-2 bg-yellow-400 text-blue-900 font-semibold rounded-lg transition transform hover:scale-105 hover:bg-yellow-500 cursor-pointer"
+                    className="px-5 py-2 bg-white text-blue-500 font-semibold rounded-lg transition transform hover:scale-105 hover:bg-white cursor-pointer text-blue-600"
                     onClick={() => setIsOpen(false)}
                   >
                     Get a Quote
-                  </Link>
+                  </Link> */}
                 </div>
               </>
             ) : null}
