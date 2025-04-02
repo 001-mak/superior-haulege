@@ -13,7 +13,7 @@ const Services = () => {
   return (
     <section className="py-16 bg-[#F8F9FA] px-16">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+          <div className="text-center mb-12" data-aos="fade-up">
           <h2 className="text-4xl font-bold text-black mb-4">Our Services</h2>
           <div className="w-24 h-1 bg-blue-500 mx-auto mb-6"></div>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
@@ -25,6 +25,7 @@ const Services = () => {
           {ServiceArr.map((service, index) => (
             <div 
               key={index} 
+              data-aos="zoom-in-up"
               className="service-card"
             >
               {/* Background Image */}

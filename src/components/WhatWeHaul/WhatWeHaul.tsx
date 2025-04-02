@@ -112,17 +112,27 @@ const items = [
 const WhatWeHaul = () => {
   return (
     <>
-      <div id="haul-section" className="bg-white py-10"  data-aos="fade-up">
-
+      <div id="haul-section" className="bg-white py-10">
         {/* Section Title */}
-        <div className="text-center mb-12">
+        <div
+          className="text-center mb-12"
+          data-aos="fade-up"
+          data-aos-duration="400"
+          data-aos-easing="ease-in-sine"
+        >
           <h2 className="text-4xl font-bold text-black mb-4">What We Haul</h2>
           <div className="w-24 h-1 bg-blue-500 mx-auto mb-6"></div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-[150px]">
           {items.map((item, index) => (
-            <div key={index} className="flex flex-col bg-[#F8F9FA] px-4 py-6 border border-gray-100 hover:-translate-y-1 hover:shadow-xl transition duration-300 ease-in-out">
+            <div
+              key={index}
+              data-aos="flip-up"
+              data-aos-duration="400"
+              data-aos-easing="ease-in-out"
+              className="flex flex-col bg-[#F8F9FA] px-4 py-6 border border-gray-100 hover:-translate-y-1 hover:shadow-xl transition duration-300 ease-in-out"
+            >
               {/* Icon */}
               <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 text-white text-2xl mr-4">
                 <item.icon />

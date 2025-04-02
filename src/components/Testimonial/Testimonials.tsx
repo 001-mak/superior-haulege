@@ -43,7 +43,7 @@ const Testimonials = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveTestimonial((prev) => (prev + 1) % testimonials.length);
-    }, 5000);
+    }, 2000);
     
     return () => clearInterval(interval);
   }, [testimonials.length]);
@@ -56,7 +56,7 @@ const Testimonials = () => {
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12" data-aos="fade-up">
           <h2 className="text-3xl font-bold text-black mb-4">What Our Clients Say</h2>
           <div className="w-24 h-1 bg-blue-500 mx-auto mb-6"></div>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
@@ -64,7 +64,7 @@ const Testimonials = () => {
           </p>
         </div>
         
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto" data-aos="slide-right">
           {/* Testimonial Slider */}
           <div className="relative bg-white rounded-lg shadow-lg p-8 mb-10">
             {/* Quote Icon */}

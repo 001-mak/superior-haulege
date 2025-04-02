@@ -8,7 +8,7 @@ const partners = [
 const Partners = () => {
   return (
     <div className="bg-white py-12">
-      <div className="container mx-auto px-2">
+      <div className="container mx-auto px-2" data-aos="fade-up">
         <h2 className="text-center text-3xl font-bold text-black mb-8">
           Our Trusted Partners
         </h2>
