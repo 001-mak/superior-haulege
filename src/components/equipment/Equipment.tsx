@@ -41,7 +41,7 @@ const EquipmentSection = () => {
           {equipmentList.map((equipment, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:transform hover:scale-105"
+              className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:transform hover:scale-105"
             >
               <div className="h-48 overflow-hidden">
                 <img

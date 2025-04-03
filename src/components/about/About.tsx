@@ -1,8 +1,8 @@
 const About = () => {
   return (
     <div className="bg-[#F8F9FA]">
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2">
-        <div className="bg-blue-950 py-15 px-25">
+      <div className="mx-auto grid grid-cols-1 lg:grid-cols-2">
+        <div className="bg-blue-950 p-10 md:p-6 lg:py-15 lg:px-25 ">
           <h1
             className="text-white font-bold text-4xl"
             data-aos="fade-right"

@@ -2,134 +2,134 @@
 
 /* Service Card Base Styling */
 .service-card {
-    position: relative;
-    height: 16rem; /* h-64 */
-    border-radius: 0.5rem; /* rounded-lg */
-    overflow: hidden;
-    transition: all 0.3s;
-    transform: translateY(0);
-  }
-  
-  .service-card:hover {
-    transform: translateY(-0.5rem); /* hover:-translate-y-2 */
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* hover:shadow-xl */
-  }
-  
-  /* Image Styling */
-  .service-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  /* Darkened Overlay */
-  .service-overlay {
-    position: absolute;
-    inset: 0;
-    background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.7), transparent);
-    opacity: 0.7;
-  }
-  
-  /* Service Title Positioning */
-  .service-title {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 1.5rem; /* p-6 */
-    z-index: 10;
-  }
-  
-  /* Glowing Border Container */
-  .service-border {
-    position: absolute;
-    inset: 0;
-    border-radius: 0.5rem;
-    border: 2px solid transparent;
-    opacity: 0;
-    transition: opacity 0.5s;
-    overflow: hidden;
-  }
-  
-  .service-card:hover .service-border {
-    opacity: 1;
-  }
-  
-  /* Individual Border Segments */
-  .border-top,
-  .border-right,
-  .border-bottom,
-  .border-left {
-    position: absolute;
-    background-color: #3b82f6; /* blue-500 */
-    box-shadow: 0 0 10px 3px rgba(59, 130, 246, 0.7);
-  }
-  
-  .border-top,
-  .border-bottom {
-    width: 100%;
-    height: 2px;
-  }
-  
-  .border-left,
-  .border-right {
-    width: 2px;
-    height: 100%;
-  }
-  
-  .border-top {
-    top: 0;
-    left: -100%;
-  }
-  
-  .border-right {
-    right: 0;
-    top: 100%;
-  }
-  
-  .border-bottom {
-    bottom: 0;
-    right: -100%;
-  }
-  
-  .border-left {
-    left: 0;
-    top: -100%;
-  }
-  
-  /* Border Animations */
-  .service-card:hover .border-top {
-    animation: border-top 0.5s forwards;
-  }
-  
-  .service-card:hover .border-right {
-    animation: border-right 0.5s 0.1s forwards;
-  }
-  
-  .service-card:hover .border-bottom {
-    animation: border-bottom 0.5s 0.2s forwards;
-  }
-  
-  .service-card:hover .border-left {
-    animation: border-left 0.5s 0.3s forwards;
-  }
-  
-  /* Animation Keyframes */
-  @keyframes border-top {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(0); }
-  }
-  
-  @keyframes border-right {
-    0% { transform: translateY(100%); }
-    100% { transform: translateY(0); }
-  }
-  
-  @keyframes border-bottom {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(0); }
-  }
-  
-  @keyframes border-left {
-    0% { transform: translateY(-100%); }
-    100% { transform: translateY(0); }
-  }
+  position: relative;
+  height: 16rem; /* h-64 */
+  border-radius: 0.5rem; /* rounded-lg */
+  overflow: hidden;
+  transition: all 0.3s;
+  transform: translateY(0);
+}
+
+.service-card:hover {
+  transform: translateY(-0.5rem); /* hover:-translate-y-2 */
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* hover:shadow-xl */
+}
+
+/* Image Styling */
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Darkened Overlay */
+.service-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.7), transparent);
+  opacity: 0.7;
+}
+
+/* Service Title Positioning */
+.service-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1.5rem; /* p-6 */
+  z-index: 10;
+}
+
+/* Glowing Border Container */
+.service-border {
+  position: absolute;
+  inset: 0;
+  border-radius: 0.5rem;
+  border: 2px solid transparent;
+  opacity: 0;
+  transition: opacity 0.5s;
+  overflow: hidden;
+}
+
+.service-card:hover .service-border {
+  opacity: 1;
+}
+
+/* Individual Border Segments */
+.border-top,
+.border-right,
+.border-bottom,
+.border-left {
+  position: absolute;
+  background-color: #3b82f6; /* blue-500 */
+  box-shadow: 0 0 10px 3px rgba(59, 130, 246, 0.7);
+}
+
+.border-top,
+.border-bottom {
+  width: 100%;
+  height: 2px;
+}
+
+.border-left,
+.border-right {
+  width: 2px;
+  height: 100%;
+}
+
+.border-top {
+  top: 0;
+  left: -100%;
+}
+
+.border-right {
+  right: 0;
+  top: 100%;
+}
+
+.border-bottom {
+  bottom: 0;
+  right: -100%;
+}
+
+.border-left {
+  left: 0;
+  top: -100%;
+}
+
+/* Border Animations */
+.service-card:hover .border-top {
+  animation: border-top 0.5s forwards;
+}
+
+.service-card:hover .border-right {
+  animation: border-right 0.5s 0.1s forwards;
+}
+
+.service-card:hover .border-bottom {
+  animation: border-bottom 0.5s 0.2s forwards;
+}
+
+.service-card:hover .border-left {
+  animation: border-left 0.5s 0.3s forwards;
+}
+
+/* Animation Keyframes */
+@keyframes border-top {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes border-right {
+  0% { transform: translateY(100%); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes border-bottom {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes border-left {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(0); }
+}
