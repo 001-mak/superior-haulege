@@ -28,7 +28,7 @@ const EquipmentSection = () => {
 
   return (
     <section className="py-12 bg-[#F8F9FA] ">
-      <div className="max-w-full mx-auto px-20" data-aos="zoom-in-up">
+      <div className="max-w-full mx-auto px-4 lg:px-20" data-aos="zoom-in-up">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-black mb-4">Our Equipment</h2>
           <div className="w-24 h-1 bg-blue-500 mx-auto mb-6"></div>

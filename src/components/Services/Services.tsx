@@ -7,11 +7,11 @@ const Services = () => {
     { name: "Roadwork", image: "/roadwork.jpg" },
     { name: "Demolition", image: "/demolition.jpg" },
     { name: "Excavation", image: "/excavation.jpg" },
-    { name: "Dump Sites Available", image: "/dumpsite.jpg" },
+    { name: "Site Development", image: "/dumpsite.jpg" },
   ];
 
   return (
-    <section className="py-16 bg-[#F8F9FA] px-16">
+    <div className="lg:p-16 bg-[#F8F9FA]">
       <div className="container mx-auto px-4">
           <div className="text-center mb-12" data-aos="fade-up">
           <h2 className="text-4xl font-bold text-black mb-4">Our Services</h2>
@@ -26,7 +26,7 @@ const Services = () => {
             <div 
               key={index} 
               data-aos="zoom-in-up"
-              className="service-card"
+              className="service-card "
             >
               {/* Background Image */}
               <img 
@@ -54,7 +54,7 @@ const Services = () => {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

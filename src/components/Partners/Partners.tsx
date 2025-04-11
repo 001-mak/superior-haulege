@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 const partners = [
   { logo: "/p1.jpg" },
   { logo: "/p2.jpg" },
@@ -14,19 +13,16 @@ const Partners = () => {
         </h2>
         <div className="flex justify-center gap-10">
           {partners.map((partner, index) => (
-            <motion.div
+            <div
               key={index}
               className="flex items-center justify-center"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <img
                 src={partner.logo}
                 alt={`Partner ${index + 1}`}
                 className="h-30 w-auto lg:mx-10"
               />
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
